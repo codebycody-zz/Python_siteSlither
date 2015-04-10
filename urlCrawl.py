@@ -2,6 +2,7 @@ import urllib.request
 import os
 url_page = input('Select your web page: ')
 domain_name = url_page.partition('.')[0]
+#! Needs a better way to check for http || https
 if 'https://' not in url_page : url_page = 'https://%s' % url_page
 req = urllib.request.Request(url_page)
 response = urllib.request.urlopen(req)
