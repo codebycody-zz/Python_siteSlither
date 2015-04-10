@@ -9,6 +9,7 @@ response = urllib.request.urlopen(req)
 the_page = response.read()
 if not os.path.exists(domain_name):
 	os.makedirs(domain_name)
+#in the next round need to check the file name that browser gives.
 output = open(domain_name + '\\' + domain_name + '.html','wb')
 output.write(the_page)
 output.close()
