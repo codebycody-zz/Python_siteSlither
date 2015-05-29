@@ -22,3 +22,6 @@ if not os.path.exists(domain_name + '\\' + 'css'):
 output = open(domain_name + '\\' + 'css' + '\\' + 'main' + '.css','wb')
 output.write(the_page)
 output.close()
+
+
+#I really need to update this project!
